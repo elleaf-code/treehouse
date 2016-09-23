@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Lorien
-permalink: /about/
+permalink: /lorien/
 ---
 
 Customizing, customizing and <3 <3 <3
