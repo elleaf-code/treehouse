@@ -1,23 +1,230 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='style.css'/>
+  
+  <script src='script.js'></script>
+  </head>
+  <body>
+    
 
-<div class="home">
+    <!-- JUMBOTRON -->
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="jumbotron">
+      <div class="container"> 
+      
+      <div class="header">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><img src="http://estaticos.lab.eldiario.es/estaticos/close.png"></a></li>
+          </ul>
+        </div>
+      </div>
+        
+        <div class="main">
+          <h1>Treehouse</h1>
+          <p>Get your own tree house!</p>
+          <br>
+          <a href="#"><img src="http://predstavitve.harveynorman.si/foto-center/img/slider/start.png"></img></a>
+        </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- SUPPORTING -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="supporting">
+      <div class="container">
+        
+        <div class="text-center">
+          <h3 id="about">About</h3>
+          <p>Nature inspires us all. Unplug from the daily routine and reconnect with nature. Get ideas for where to go and what to do, then grab the kids and start discovering. We can make your dreams come true with building your perfect and unique tree house.</p>
+        </div>
+        
+        <div class="col">
+          <img src="http://www.pakhan.com/wp-content/uploads/2012/08/IMG_5802-M.jpg">
+          <h2>Dream</h2>
+          <p>Imagine your dream tree house and tell us about it :).</p>
+          <a href='#'>Read more</a>
+        </div>
+        
+        <div class="col">
+          <img src="https://theglobaloyster.files.wordpress.com/2014/04/6-treegug.jpg">
+          <h2>Make</h2>
+          <p>We use modern tools to make your special  tree house.</p>
+          <a href='#'>Read more</a>
+        </div>
+        
+        <div class="col">
+          <!--<img src="http://www.annaandspencer.com/blog/wp-content/uploads/2015/08/Atlanta-Treehouse-Engagement.jpg"> -->
+          <!--<img src="http://tinyhouseswoon.com/wp-content/uploads/2013/01/treehouse-point-4.jpg"> -->
+          <!--<img src="https://s-media-cache-ak0.pinimg.com/originals/23/9a/35/239a3561ce5fb3eb8605bc4add2c49ca.jpg"> -->
+          <img src="http://www.fubiz.net/wp-content/uploads/2014/11/Secluded-Intown-Treehouse_9.jpg">
+          <h2>Enjoy</h2>
+          <p>Spend time in your favourite tree house and have fun!</p>
+          <a href='#'>Read more</a>
+        </div>
+        
+      </div>
+      <div class="clearfix"></div>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- SUPPORTING 2 -->
 
-</div>
+    <div class="supporting-2">
+      <!-- <div class="container"> -->
+      
+              
+        <div class="col-color">
+         <div class="inside"> 
+          
+          <h2>Why we?</h2>
+          <p>As kids, most of us have dreamed of having a tree house as a safe haven – a secret place where we could establish a top-secret club house away from our pesky parents. Some of us still do.</p>
+              
+        <div id="prednosti">
+        
+        <div class="first">
+         <!--<img src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/ideas-icon.png">-->
+         <img src="http://theleveestudios.com/images/lightbulb-alt.svg?crc=4021940464">
+         <h3>Idea</h3>
+         <p>Everything starts with an idea.</p>
+        </div>
+        
+        <div class="second">
+         <!--<img src="http://www.axis.com/sites/default/files/tools-icon.png?chunk-nid-38138-chunk-vid-93873">-->
+         <img src="http://www.yes-mag.com/wp-content/uploads/2013/07/learning-tool-round-black.png">
+         <h3>Tools</h3>
+         <p>We use modern tools.</p>
+        </div>
+        
+        <div class="third">
+         <!--<img src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/timer-icon.png">-->
+         <!--<img src="http://downloadicons.net/sites/default/files/time-icon-20727.png">-->
+         <img src="http://athome.readinghorizons.com/Media/Default/Images/Solutions/1373422647_time-24.png">
+         <h3>Time</h3>
+         <p>We made it quickly and professionally.</p>
+        </div>
+        
+        </div>
+       
+         </div>
+        </div>
+        
+        <div class="col-img"></div>
+        <div class="col-img"></div>
+          
+        <div class="col-color">
+         <div class="inside"> 
+            <h2>Our experiences</h2>
+            <p>At Green Treehouse we strive to create the most interesting and beautiful treehouses in the world and to provide high quality services, information and supplies that allow others to do the same.</p>
+            
+         <img src="https://s-media-cache-ak0.pinimg.com/564x/b1/e8/4a/b1e84a129dc3daf860deda773ec98f6d.jpg" class="circle">   
+         
+         <!--<img src="https://s-media-cache-ak0.pinimg.com/236x/70/0b/ec/700bec95472772fcdde67709511bfae7.jpg" class="circle">-->
+         
+         <img src="https://s-media-cache-ak0.pinimg.com/564x/c2/a9/49/c2a9491eb923927b2423e7dc93c13237.jpg" class="circle">
+         
+         </div>
+        </div>
+        
+        <!-- </div> -->  
+      <div class="clearfix"></div>
+    </div>
+    
+   <!-- SUPPORTING 3 -->
+
+    <div class="supporting-3">
+      <div class="container">
+                 
+       <div class="video"><iframe src="https://www.youtube.com/embed/GFacOZiWapg" frameborder="0" allowfullscreen></iframe></div>
+       
+       <br>
+       
+       <a href="#">More videos</a>
+       
+       </div>
+      <div class="clearfix"></div>
+    </div>
+
+    
+    <!-- SUPPORTING 4 -->
+
+    <div class="supporting-4">
+      <div class="container">
+        <div class="text-center">
+          <h2>Our team</h2>
+        </div>
+        
+        <div class="col">
+          <img src="http://zblogged.com/wp-content/uploads/2015/11/17.jpg">
+          <h3>George Stone</h3>
+          <p>Organizator</p>
+        </div>
+        
+        <div class="col">
+          <img src="http://www.mackeymitchell.com/wordpress/wp-content/uploads/2014/12/Kim_Hughes1-300x300.jpg">
+          <h3>Elin McKelly</h3>
+          <p>Designer</p>
+        </div>
+        
+        <div class="col">
+          <img src="http://www.mackeymitchell.com/wordpress/wp-content/uploads/2014/12/Lea_McRoberts-300x300.jpg">
+          <h3>Lucia Green</h3>
+          <p>Worker</p>
+        </div>
+        
+              
+        <div class="col">
+          <img src="http://www.lawyersweekly.com.au/images/LW_Media_Library/LW620p26Partner-Profile.jpg">
+          <h3>Tom Wood</h3>
+          <p>Worker</p>
+        </div>
+        
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+    <!-- SUPPORTING 5 -->
+
+    <div class="supporting-5">
+      <div class="container">
+        <div class="text-center">
+          <h3>Contact</h3>
+          <p><b>Phone:</b> 304-485-3364</p>
+          <p><b>E-mail:</b> treehouses@gmail.com </p>
+          <p><b>Location:</b> 2 Cactus Garden Way
+Henderson, NV 89014</p>
+          <ul class="social-net">
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png"></a></li>
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png"></a></li>
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-128.png"></a></li>
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png"></a></li>
+                        
+            <!-- http://www.sketchappsources.com/free-source/1883-extensive-company-icon-set-sketch-freebie-resource.html -->
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+
+    
+    <!-- FOOTER -->
+    
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Tree houses 2016</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
