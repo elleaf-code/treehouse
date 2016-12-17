@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+	
+	<script src='script.js'></script>
+	
+	<style>
+		html, body {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		.content {
+		  position: fixed;
+		  left: 0;
+		  right: 0;
+		  z-index: 9999;
+		  margin-left: 20px;
+		  margin-right: 20px;
+		}
+
+		 
+		.header {
+		  position: fixed;
+		  background-color: #333333;
+		  padding-left: 30px;
+		  padding-right: 10px;
+		  margin: 30px auto;
+		  margin-left: 40%;
+		  z-index: 100;
+		}
+			
+		.header .nav li {
+		  display: inline;
+		  margin-right: 25px;
+		  text-transform: uppercase;
+		}
+
+		.container {
+		  top: 100px;
+		  max-width: 940px;
+		  margin: 0 auto;
+		  padding: 0 10px;
+		  z-index: 1;
+		}
+
+		.jumbotron {
+		  height: 650px;
+		  /*background: url(https://static.pexels.com/photos/1826/wood-nature-sunny-forest.jpg) no-repeat center;*/
+		  /*background: url(http://nebula.wsimg.com/efeeeb27a40dd8536c6156224b343726?AccessKeyId=B2D648A1CED227DD212A&disposition=0&alloworigin=1) no-repeat center;*/
+		  background: url(https://s3.amazonaws.com/images.hiresphoto.com/girl-in-the-forest.jpg) no-repeat left;
+		  background-size: cover;
+		  filter: hue-rotate(30deg);
+		  -webkit-filter: hue-rotate(30deg)
+		}
+
+		.nav {
+		  margin: 0px auto;
+		  padding: 20px 0;
+		  background-color: #333333;
+		}
+
+		.nav li a {
+		  color: #fff;
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 600;
+		  font-size: 12px;
+		  text-decoration: none;
+		}
+
+		.nav li img {
+		  height: 25px;
+		  margin-bottom: -5px;
+		}
+
+		.main {
+		  position: relative;
+		  top: 180px;
+		  text-align: center;
+		}
+
+		.main h1 {
+		  color: #fff;
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 100;
+		  font-size: 50px;
+		  margin-top: 0;
+		  margin-bottom: 20px;
+		  text-transform: uppercase;
+		}
+
+		.main p {
+		  color: #fff;
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 800;
+		  font-size: 16px;
+		  letter-spacing: 1.3px;
+		  padding: 0px 20px;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		}
+
+		.main a:link {
+		  opacity: 0.7;
+		  background-color: transparent;
+		  border: none;
+		  margin: 5px 20px;
+		}
+
+		.main a:hover {
+		  opacity: 0.9;
+		  background-color: transparent;
+		  border: none;
+		  margin: 5px 20px;
+		}
+
+		/* pqpqpqpqpqpqpqpqpq SUPPORTING pqpqpqpqpqpqpqpqpq*/
+
+		.supporting {
+		  padding-top: 70px;
+		  padding-bottom: 80px;
+		  margin-left:0%;
+		  margin-right:0%;
+		  background-color:#e9e8e2 /*#f6f4ef*/;
+		  /*border: 2px solid #33cc33;*/
+		  z-index: -1;
+		 }
+		 
+		 .supporting .container {
+		  top: 100px;
+		  max-width: 970px;
+		  margin: 0 auto;
+		  padding: 0 10px;
+		}
+
+		.supporting a {
+		  font-size: 12px;
+		  border: 1px solid #333333;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 30px;
+		  padding-right: 30px;
+		  color: #333333;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  letter-spacing: 1px;
+		}
+
+		.supporting .col {
+		  float: left;
+		  width: 31.3%;
+		  font-family: 'Open Sans Light', sans-serif;
+		  text-align: center;
+		  margin: 1%;
+		  /*border: 2px solid red;*/
+		  padding-top: 0px;
+		  padding-bottom: 50px;
+		  background-color: #fff;
+		  -webkit-filter: grayscale(0%);
+		  filter: grayscale(0%);
+		}
+
+		.supporting .col:hover {
+		 -webkit-filter: grayscale(100%);
+		 filter: grayscale(100%);
+		}
+
+		.supporting img {
+		  width: 100%;
+		  margin-bottom:20px;
+		}
+
+		.supporting h2 {
+		  font-weight: 600;
+		  font-size: 20px;
+		  text-transform: uppercase;
+		}
+
+		.supporting p {
+		  font-weight: 400;
+		  font-size: 13px;
+		  color: #4d4d4d;
+		  line-height: 20px;
+		  padding: 0 50px;
+		  margin-bottom: 50px;
+		  margin-top: 15px;
+		}
+
+		.text-center {
+		  margin-top: -20px;
+		  font-family: 'Raleway', sans-serif;
+		  text-align: center;  
+		}
+
+		.text-center h3 {
+		  text-transform: uppercase;
+		  font-family: 'Open Sans Light', sans-serif;
+		}
+
+		.text-center p {
+		  font-size: 13px;
+		  color: #4d4d4d;
+		}
+
+		/* pqpqpqpqpqpqpqpqp SUPPORTING 2 pqpqpqpqpqpqpqpqp*/
+
+		@media (min-width: 480px) {
+		  .supporting-2 .col-color {
+			width: 100%;
+			height:500px;
+		  }
+		  .supporting-2 .col-img {
+			width: 100%;
+			height:150px;
+		}
+		}
+
+		@media (min-width: 768px) {
+		  .supporting-2 .col-color {
+			width: 50%;
+			height:500px;
+		  }
+		  .supporting-2 .col-img {
+			width: 50%;
+			height:500px;
+		  }
+		}
+
+
+		.supporting-2 {
+		  padding: 0;
+		  background: url(http://miriadna.com/desctopwalls/images/max/Bright-foggy-forest.jpg) no-repeat center fixed; 
+		  background-size: cover;*/
+		  /*border: 2px solid blue;*/
+		}
+
+		.supporting-2 .col-color {
+		  float: left;
+		  background: #fff;
+		  margin: 0px;
+		  /*border: 1px solid red;*/
+		}
+
+		.supporting-2 .col-img {
+		  float: left;
+		  margin: 0px;
+		  /*border: 1px solid red;*/
+		}
+
+		.inside {
+		  font-family: 'Open Sans Light', sans-serif; 
+		  padding-left: 100px;
+		  padding-right: 100px;
+		  padding-top: 10%;
+		  text-align: left;
+		}
+
+		.inside h2 {
+		  font-weight: 600;
+		  font-size: 20px;
+		  text-transform: uppercase; 
+		  margin-bottom: 30px;
+		}
+
+		.inside p {
+		  font-weight: 400;
+		  font-size: 13px;
+		  color: #4d4d4d;
+		  line-height: 20px;
+		  margin-bottom: 30px; 
+		  margin-left: 0px;
+		}
+
+		#prednosti h3 {
+		  font-weight: 600;
+		  font-size: 15px;
+		  text-transform: uppercase;
+		  display: inline;
+		  position: relative;
+		  letter-spacing: 1px;
+		  margin-left: 20px;
+		  vertical-align: 22.5px;
+		}
+
+		#prednosti p {
+		  font-weight: 400;
+		  font-size: 13px;
+		  color: #4d4d4d;
+		  line-height: 20px;
+		  margin-bottom: 0px; 
+		  margin-left: 5px;
+		  display: inline;
+		  vertical-align: 22.5px;
+		}
+
+		#prednosti img {
+		  height: 50px;
+		  vertical-align: 0px;
+		  border-radius:50%;
+		  margin-bottom: 10px;
+		  padding:0;
+		  background: url(http://www.freetexturesdownload.com/image/Leaves-Free-Textures-11681.jpg) no-repeat left ;
+		  background-size:cover;
+		}
+		  
+		.circle {
+		  border-radius: 100%;
+		  border: 2px solid #333;
+		  border-right: 1px solid  #99cc00;
+		  margin-top:10px;
+		  margin-right:30px;
+		}
+
+		@media (min-width: 480px) {
+		  .circle {
+			height:150px;
+			width: 150px;
+		  }
+		}
+
+		@media (min-width: 768px) {
+		  .circle {
+			height:180px;
+			width: 180px;
+		  }
+		}
+
+
+		/* pqpqpqpqpqpqpqpq SUPPORTING 3 pqpqpqpqpqpqpqpqpqp*/
+
+		.supporting-3 {
+		  padding-top: 80px;
+		  padding-bottom: 100px;
+		  background: url(http://nebula.wsimg.com/efeeeb27a40dd8536c6156224b343726?AccessKeyId=B2D648A1CED227DD212A&disposition=0&alloworigin=1) no-repeat center fixed; 
+		  background-size: cover;
+		  filter: brightness(100%);
+		  text-align: center;
+		}
+
+		iframe {
+		 margin-bottom:30px;
+		}
+
+		.supporting-3 a {
+		  font-family: 'Open Sans Light', sans-serif;
+		  font-size: 12px;
+		  border: 1px solid #333333;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 30px;
+		  padding-right: 30px;
+		  color: #fff;
+		  background-color: #333;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  letter-spacing: 1px;
+		}
+
+		.supporting-3 a:cover {
+			background-color: #666;
+			border: 1px solid #666;
+		}
+
+		@media (min-width: 480px) {
+		  iframe {
+			width: 427px;
+			height: 240px;
+		  }
+		}
+
+		@media (min-width: 768px) {
+		  iframe {
+			width: 854px;
+			height: 480px;
+		  }
+		}
+
+		/* pqpqpqpqpqpqpqpqp SUPPORTING 4 pqpqpqpqpqpqpqpqp*/
+
+		.supporting-4 {
+		  padding-top: 80px;
+		  padding-bottom: 100px;
+		  background: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg) no-repeat center fixed; 
+		  /*background: #eaeaea;*/ 
+		  background-size: cover;
+		  filter: sepia(10%);
+		  color: #fff;
+		}
+
+
+		.supporting-4 .col {
+		  float: left;
+		  width: 23%;
+		  font-family: 'Raleway', sans-serif;
+		  text-align: center;
+		  margin: 1%; 
+		  margin-bottom: 20px;
+		  background: #fff;
+		  padding-top: 30px;
+		  filter: grayscale(100%);
+		}
+
+		.supporting-4 .col:hover {
+			filter: grayscale(0%);
+		}
+
+		.supporting-4 .text-center h2 {
+		  color: #333; 
+		  margin-bottom: 40px;
+		  font-size: 20px;
+		  text-transform: uppercase;
+		}
+
+		.supporting-4 img {
+		  height: 110px;
+		  border-radius: 100%;
+		}
+
+		.supporting-4 h3 {
+		  color: #333;
+		  font-weight: 600;
+		  margin-top: 25px;
+		}
+
+		.supporting-4 p {
+		  color: #333;
+		  font-weight: 400;
+		  line-height: 20px;
+		  padding: 0 50px;
+		  margin-bottom: 40px;
+		  margin-top: 5px;
+		  text-transform: uppercase;
+		}
+
+		@media (min-width: 480px) {
+		  .supporting-4 p {
+			font-size: 0.8em;
+		  }
+		  .supporting-4 h3 {
+			font-size: 0.9em;
+		  }
+		}
+
+		@media (min-width: 768px) {
+		  .supporting-4 p {
+			font-size: 0.7em;
+		  }
+		  .supporting-4 h3 {
+			font-size: 0.9em;
+		  }
+		}
+
+		.clearfix {
+		  clear: both;
+		}
+
+		/* pqpqpqpqpqpqpqpq SUPPORTING 5 pqpqpqpqpqpqpqpqpqp*/
+
+		.supporting-5 {
+		  padding-top: 60px;
+		  padding-bottom: 60px;
+		  background: #dbd3bd; 
+		  background-size: cover;
+		  filter: sepia(0%);
+		}
+
+
+		.supporting-5 img {
+		  height: 32px;
+		}
+
+		.supporting-5 .text-center h3 {
+		  color: #fff;
+		  filter: none;
+		  font-weight: 800;
+		  margin-bottom: 30px;
+		}
+
+		.supporting-5 .text-center p {
+		  color: #333;
+		  filter: none;
+		  margin-bottom: 15px;
+		}
+
+		.supporting-5 .social-net ul {
+		  margin-top: 40px;
+		  text-align: center;
+		}
+
+		.supporting-5 .social-net li {
+		  display: inline;
+		  margin-right: 10px;
+		}
+
+		.social-net img {
+		  height:40px;
+		}
+
+
+		/* pqpqpqpqpqpqpqpqpqp FOOTER pqpqpqpqpqpqpqpqpqp*/
+
+		.footer {
+		  background-color: #333;
+		  color: #fff;
+		  padding: 30px 0;
+		}
+
+		.footer p {
+		  font-family: 'Raleway', sans-serif;
+		  text-transform: uppercase;
+		  font-size: 11px;
+		}
+
+		@media (max-width: 500px) {
+		  .main h1 {
+			font-size: 50px;
+			padding: 0 40px;
+		  }
+
+		  .supporting .col {
+			width: 100%;
+		  }
+		}
+					  
+			
+    
+    
+    
+    
+          
+
+</style>
+  </head>
+  <body>
+    
+
+    <!-- JUMBOTRON -->
+
+    <div class="jumbotron">
+      <div class="container"> 
+      
+      <div class="header">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#about"><img src="http://estaticos.lab.eldiario.es/estaticos/close.png"></a></li>
+          </ul>
+        </div>
+      </div>
+        
+        <div class="main">
+          <h1>Treehouse</h1>
+          <p>Get your own tree house!</p>
+          <br>
+          <a href="#"><img src="http://predstavitve.harveynorman.si/foto-center/img/slider/start.png"></img></a>
+        </div>
+
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- SUPPORTING -->
+
+    <div class="supporting">
+      <div class="container">
+        
+        <div class="text-center">
+          <h3 id="about">About</h3>
+          <p>Nature inspires us all. Unplug from the daily routine and reconnect with nature. Get ideas for where to go and what to do, then grab the kids and start discovering. We can make your dreams come true with building your perfect and unique tree house.</p>
+        </div>
+        
+        <div class="col">
+          <img src="http://www.pakhan.com/wp-content/uploads/2012/08/IMG_5802-M.jpg">
+          <h2>Dream</h2>
+          <p>Imagine your dream tree house and tell us about it :).</p>
+          <a href='#'>Read more</a>
+        </div>
+        
+        <div class="col">
+          <img src="https://theglobaloyster.files.wordpress.com/2014/04/6-treegug.jpg">
+          <h2>Make</h2>
+          <p>We use modern tools to make your special  tree house.</p>
+          <a href='#'>Read more</a>
+        </div>
+        
+        <div class="col">
+          <!--<img src="http://www.annaandspencer.com/blog/wp-content/uploads/2015/08/Atlanta-Treehouse-Engagement.jpg"> -->
+          <!--<img src="http://tinyhouseswoon.com/wp-content/uploads/2013/01/treehouse-point-4.jpg"> -->
+          <!--<img src="https://s-media-cache-ak0.pinimg.com/originals/23/9a/35/239a3561ce5fb3eb8605bc4add2c49ca.jpg"> -->
+          <img src="http://www.fubiz.net/wp-content/uploads/2014/11/Secluded-Intown-Treehouse_9.jpg">
+          <h2>Enjoy</h2>
+          <p>Spend time in your favourite tree house and have fun!</p>
+          <a href='#'>Read more</a>
+        </div>
+        
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+<!-- SUPPORTING 2 -->
+
+    <div class="supporting-2">
+      <!-- <div class="container"> -->
+      
+              
+        <div class="col-color">
+         <div class="inside"> 
+          
+          <h2>Why we?</h2>
+          <p>As kids, most of us have dreamed of having a tree house as a safe haven – a secret place where we could establish a top-secret club house away from our pesky parents. Some of us still do.</p>
+              
+        <div id="prednosti">
+        
+        <div class="first">
+         <!--<img src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/ideas-icon.png">-->
+         <img src="http://theleveestudios.com/images/lightbulb-alt.svg?crc=4021940464">
+         <h3>Idea</h3>
+         <p>Everything starts with an idea.</p>
+        </div>
+        
+        <div class="second">
+         <!--<img src="http://www.axis.com/sites/default/files/tools-icon.png?chunk-nid-38138-chunk-vid-93873">-->
+         <img src="http://www.yes-mag.com/wp-content/uploads/2013/07/learning-tool-round-black.png">
+         <h3>Tools</h3>
+         <p>We use modern tools.</p>
+        </div>
+        
+        <div class="third">
+         <!--<img src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/timer-icon.png">-->
+         <!--<img src="http://downloadicons.net/sites/default/files/time-icon-20727.png">-->
+         <img src="http://athome.readinghorizons.com/Media/Default/Images/Solutions/1373422647_time-24.png">
+         <h3>Time</h3>
+         <p>We made it quickly and professionally.</p>
+        </div>
+        
+        </div>
+       
+         </div>
+        </div>
+        
+        <div class="col-img"></div>
+        <div class="col-img"></div>
+          
+        <div class="col-color">
+         <div class="inside"> 
+            <h2>Our experiences</h2>
+            <p>At Green Treehouse we strive to create the most interesting and beautiful treehouses in the world and to provide high quality services, information and supplies that allow others to do the same.</p>
+            
+         <img src="https://s-media-cache-ak0.pinimg.com/564x/b1/e8/4a/b1e84a129dc3daf860deda773ec98f6d.jpg" class="circle">   
+         
+         <!--<img src="https://s-media-cache-ak0.pinimg.com/236x/70/0b/ec/700bec95472772fcdde67709511bfae7.jpg" class="circle">-->
+         
+         <img src="https://s-media-cache-ak0.pinimg.com/564x/c2/a9/49/c2a9491eb923927b2423e7dc93c13237.jpg" class="circle">
+         
+         </div>
+        </div>
+        
+        <!-- </div> -->  
+      <div class="clearfix"></div>
+    </div>
+    
+   <!-- SUPPORTING 3 -->
+
+    <div class="supporting-3">
+      <div class="container">
+                 
+       <div class="video"><iframe src="https://www.youtube.com/embed/GFacOZiWapg" frameborder="0" allowfullscreen></iframe></div>
+       
+       <br>
+       
+       <a href="#">More videos</a>
+       
+       </div>
+      <div class="clearfix"></div>
+    </div>
+
+    
+    <!-- SUPPORTING 4 -->
+
+    <div class="supporting-4">
+      <div class="container">
+        <div class="text-center">
+          <h2>Our team</h2>
+        </div>
+        
+        <div class="col">
+          <img src="http://zblogged.com/wp-content/uploads/2015/11/17.jpg">
+          <h3>George Stone</h3>
+          <p>Organizator</p>
+        </div>
+        
+        <div class="col">
+          <img src="http://www.mackeymitchell.com/wordpress/wp-content/uploads/2014/12/Kim_Hughes1-300x300.jpg">
+          <h3>Elin McKelly</h3>
+          <p>Designer</p>
+        </div>
+        
+        <div class="col">
+          <img src="http://www.mackeymitchell.com/wordpress/wp-content/uploads/2014/12/Lea_McRoberts-300x300.jpg">
+          <h3>Lucia Green</h3>
+          <p>Worker</p>
+        </div>
+        
+              
+        <div class="col">
+          <img src="http://www.lawyersweekly.com.au/images/LW_Media_Library/LW620p26Partner-Profile.jpg">
+          <h3>Tom Wood</h3>
+          <p>Worker</p>
+        </div>
+        
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+    <!-- SUPPORTING 5 -->
+
+    <div class="supporting-5">
+      <div class="container">
+        <div class="text-center">
+          <h3>Contact</h3>
+          <p><b>Phone:</b> 304-485-3364</p>
+          <p><b>E-mail:</b> treehouses@gmail.com </p>
+          <p><b>Location:</b> 2 Cactus Garden Way
+Henderson, NV 89014</p>
+          <ul class="social-net">
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png"></a></li>
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png"></a></li>
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-128.png"></a></li>
+            <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png"></a></li>
+                        
+            <!-- http://www.sketchappsources.com/free-source/1883-extensive-company-icon-set-sketch-freebie-resource.html -->
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+
+    
+    <!-- FOOTER -->
+    
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Tree houses 2016</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
